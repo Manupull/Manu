@@ -1,0 +1,10 @@
+.bg-container {
+    background-image: url("https://covers.openlibrary.org/b/id/5546156-M.jpg");
+    height: 100vh;
+    width: 80vw;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: white; 
+    padding: 3px;
+    margin: 8px;
+}
