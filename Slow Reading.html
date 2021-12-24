@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SlowReading</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+    <div class="shadow-card text-center ml-3">   
+      <h1 class="heading">Slow reading</h1>
+      <p class="paragraph">number of pages: 92</p>
+      <p id="data"></p>
+      <a href="https://openlibrary.org/works/OL13694821W/Slow_reading?edition=ia%3Aslowreading00mied">
+        <img src="https://covers.openlibrary.org/b/id/5546156-M.jpg" width="150px" height="150px" class="image"/>
+      </a>
+
+    </div>
+    <script>
+      var staticurl = "https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=data&format=json"
+      $ getJson(staticurl, function(data){
+
+        console.log("inside the function")
+        console.log(data)
+      $(document).ready(function(){
+        $('img').(function){
+          $('.image').attr('src','ISBN:9780980200447')
+        }
+      })
+      });
+    </script>
+  </body>
+</html>
